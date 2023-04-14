@@ -39,7 +39,15 @@ p 18.next
 # In this example, the return value is true, because "Jeff" does start with "J".
 # The puts command prints the return value of the start_with? method (true) to the console.
 first_name = "Jeff"
+last_name = "Jones"
+#upcase copies a string to all upercase letters
+puts last_name.upcase 
+#downcase copies a string to all lowercase letters
+puts first_name.downcase
+# start with returns a boolean on if the string starts with the argument 
 puts first_name.start_with?("J")
+# i dont think this is a method but i combined the strings 
+puts first_name + " " + last_name
 
 
 
@@ -49,9 +57,11 @@ puts first_name.start_with?("J")
 # https://ruby-doc.org/core-3.1.0/Integer.html
 # Include comments above each method call explaining the impact and return value of that method.
 twelve = 12
+# next returns the value plus one 
 puts twelve.next
 
 ten = 10
+# even? returns a boolean on if the number is even or not
 puts ten.even?
 
 

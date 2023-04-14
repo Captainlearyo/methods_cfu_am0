@@ -73,14 +73,14 @@ puts square(3)
 # Hint: You will only write one check_stock method that checks the quantity and then prints the corresponding statement.
 
 def check_stock(num, str)
-    if num == 4 && str == "Coffee"
-        return "Coffee is stocked"
-    elsif num == 3 && str == "Tortillas"
-        return "Tortillas - running LOW"
-    elsif num == 0 && str == "Cheese"
-        return "Cheese - OUT of stock!"
-    elsif num == 1 && str == "Salsa"
-        return "Salsa - running LOW"
+    if num >= 4 
+        return "#{str} is stocked"
+    elsif num == 3 
+        return "#{str} - running LOW"
+    elsif num == 0 
+        return "#{str} - OUT of stock!"
+    elsif num == 1 
+        return "#{str} - running LOW"
     
     end
     end
@@ -97,3 +97,8 @@ puts check_stock(0, "Cheese");
 puts check_stock(1, "Salsa");
 # => "Salsa - running LOW"
 
+def john
+p n
+end
+
+n = 3
